@@ -5,20 +5,20 @@ on:
       -main
 
 jobs: 
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        steps: 
-        - name: checkout repository
-          uses: actions/checkout@v4
+    steps: 
+    - name: checkout repository
+      uses: actions/checkout@v4
 
-        - name: Set up .NET
-          uses: actions/setup-dotnet@v4
-          with:
-            dotnet-version: '10.x'
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.x'
 
-        - name: restore dependecies
-          run: dotnet restore
+    - name: restore dependecies
+      run: dotnet restore
 
-        - name: Run unit test
-          run: dotnet test
+    - name: Run unit test
+      run: dotnet test
