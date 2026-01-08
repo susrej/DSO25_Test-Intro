@@ -9,8 +9,8 @@ public class CalculatorTest
     
     //given
     Calculator calc = new();
-    int a = 2;
-    int b = 5;
+    int a = 8;
+    int b = 2;
     int expectedResult = 7;
 
     //when
