@@ -9,7 +9,7 @@ public class CalculatorTest
     
     //given
     Calculator calc = new();
-    int a = 5;
+    int a = 2;
     int b = 5;
     int expectedResult = 7;
 
